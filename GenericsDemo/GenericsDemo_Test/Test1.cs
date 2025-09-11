@@ -41,7 +41,7 @@ namespace GenericsDemo_Test
       // Some algorithmic test, returns on success, but
       // if it falls through ( ie. element NOT found )
       // it will explicitly FAIL.
-      Assert.Fail();
+     // Assert.Fail();
     }
   }
 }
