@@ -83,7 +83,7 @@
   List<string> vals = new List<string>(new string[] { "Nothing", "is", "a", "test" });
 
   // give all characters from all words where the characters are less than 'h'
-  foreach (char c in vals.SelectMany(s => s.Where(c => c <= 'g'), (s, c) => char.ToUpper(c)))
+  foreach (char c in vals.SelectMany(s => s.Where(c => c <= 'g'), (_, c) => char.ToUpper(c)))
     Console.Write(c);
   Console.WriteLine(); // produces 'NGAE'
 
