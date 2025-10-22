@@ -87,7 +87,7 @@
             into q // stash into temporary intermediate identifier q
 
             where q.X // now restrict on intermediate result of q
-            orderby q
+            orderby q.X
             select q).Distinct().ToList();  // no LINQ equivalent of Distinct so extension method is used
                                             // illustrates result being IEnumerable, thus Distinct-able
                                             // Final ToList() forces execution
