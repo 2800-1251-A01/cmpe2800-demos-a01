@@ -45,7 +45,7 @@ namespace ServerAsync
         try
         {
           // Establish Socket, same as client
-          _listener = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.IP);
+          _listener = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
           // Bind will attempt to put a listening socket on the system, 
           //  may or may not have privilege to do this
           //  here we will listen for ANYone, but can be a single or filtered address too
